@@ -22,9 +22,9 @@ body {
 }
 /* main styles */
 .wrapper {
-    max-width: 70vw;
-    margin: 5vh auto;
-    padding: 2rem;
+    max-width: 75vw;
+    margin: 3vh auto;
+    padding: 1.5rem;
     border--webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     border-radius: 0.5rem;
@@ -32,11 +32,11 @@ body {
 }
 h1 {
     margin: 0 0 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .bayan-item {
     display: block;
@@ -48,7 +48,7 @@ h2 {
     transition: all 0.3s ease;
 }
 .head {
-    padding: 1.5rem 0;
+    padding: 0.875rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,9 +105,40 @@ h2 {
 .bayan:hover .head img {
     opacity: 1;
 }
-
-
-
+/* tablet view */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        margin: 4vh auto;
+        padding: 1.75rem;
+        max-width: 70vw;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.375rem;
+    }
+    .head {
+        padding: 1.2rem 0;
+    }
+}
+/* desktop view */
+@media only screen and (min-width: 1025px) {
+    .wrapper {
+        margin: 5vh auto;
+        padding: 2rem;
+        max-width: 60vw;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    .head {
+        padding: 1.5rem 0;
+    }
+}
 /* when hover is supported */
 @media (hover: hover) {
     .bayan:hover .bayan-item {
