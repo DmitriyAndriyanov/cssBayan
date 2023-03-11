@@ -41,6 +41,11 @@ h2 {
 .bayan-item {
     display: block;
     border-top: 1px solid #ccc;
+    color: mediumblue;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .head {
     padding: 1.5rem 0;
@@ -80,4 +85,33 @@ h2 {
 }
 .bayan-item input {
     display: none;
+}
+.bayan-item input:checked ~ .meme,
+.bayan-item:hover .meme {
+    margin: 0 auto 2rem;
+    width: 60%;
+    height: auto;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.bayan-item input:checked ~ .head img,
+.bayan-item:hover .head img {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.bayan:hover .head img {
+    opacity: 1;
+}
+
+
+
+/* when hover is supported */
+@media (hover: hover) {
+    .bayan:hover .bayan-item {
+        cursor: pointer;
+        color: #333;
+    }
 }
